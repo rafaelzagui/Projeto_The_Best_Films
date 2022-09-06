@@ -8,7 +8,8 @@ const navBar = () => {
     const navigate = useNavigate();
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(!search) return navigate(`search?q=${search}`)
+        if(!search) return 
+        navigate(`/search?q=${search}`);
         setSearch("");
     }
     return (
